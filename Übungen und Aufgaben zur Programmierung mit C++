@@ -1,0 +1,92 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	/*Aufgabe 1: Ein- und Ausgabe*/
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	cout <<"Dieses ist ein C-Programm."<<endl;
+	cout << "Und es ist ganz allein." << endl;
+
+	/*Augabe 2: Angabe zu einer Person*/
+	//Variable deklarieren
+	string Name;
+	char Konfession;
+	int Alter;
+	float Gehalt;
+	//Daten eingeben
+	cout << "Bitte Name eingeben: ";
+	cin>>Name;
+	cout <<"Bitte Konfession eingeben: ";
+	cin>>Konfession; // C für Krist und M für Musli
+	cout << "Bitte Alt eingeben: ";
+	cin>> Alter;
+	cout<< "Bitte Gehalt eingeben: ";
+	cin>>Gehalt;
+	cout << "Sie sind: "<< Name <<" von Konfession "<< Konfession << " sind " << Alter <<" Jahre-Alt "<<" und verdient "<< Gehalt <<" Euro/Monat "<<endl;
+	
+
+	/*Aufgabe 3: Temperatur Umrechnen*/
+	//Variable deklaration
+	float temp;
+	float tempInCelsius;
+	//float t = 5/9;
+	cout <<" Bitte geben Sie die Temperatur ein: ";
+	cin>> temp;
+	cout << "Die temperatur ist: "<< temp << " Grad Fahrenheit"<< endl;
+	cout <<"Umrechnen in Grad Celsius << endl "<< endl;
+	tempInCelsius =(temp - 32)* 5/9;
+	cout << "Die Temperatur ist " << tempInCelsius << " Grad Celsius "<< endl;
+
+	/*Aufgabe 5: Zahl von Tastatur einlesen*/
+	/*int zahl;
+	cout<<"Bitte geben Sie eine Zahl ein: ";
+	cin>>zahl;
+	if(zahl > 10 && zahl < 100){
+		cout<<"Sie haben eine richtige Zahl eingegeben"<<endl;
+	}
+	else{
+		cout<<"Sie haben eine falsche Zahl eingegeben"<<endl;
+	}
+
+	/*Aufgabe 6: Rabattaktion*/
+  
+	int stueckZahl;
+	float einzelPreis;
+	float rabatt5 = 0.05;
+	float rabatt10 = 0.1;
+	float gesamtPreis;
+	cout << "Bitte geben Sie die Stückzahle ein: ";
+	cin>> stueckZahl;
+	cout <<"Bitte geben Sie den Einzelpreis ein: ";
+	cin>> einzelPreis;
+	gesamtPreis = stueckZahl * einzelPreis;
+	if(stueckZahl > 10 && stueckZahl <= 50){
+		gesamtPreis -= gesamtPreis * rabatt5;
+		cout <<"Die Gesamtpreis ist: "<< gesamtPreis << endl;
+	}
+	else if(stueckZahl > 50){
+		gesamtPreis -= gesamtPreis * rabatt10;
+		cout <<"Die Gesamtpreis ist: "<< gesamtPreis << endl;
+	}
+	else{
+		//gesamtPreis = stueckZahl * einzelPreis;
+		cout <<"Die Gesamtpreis ist: "<< gesamtPreis << endl;
+
+	}
+
+	/*Aufgabe 7: Antworten mit Ja oder Nein*/
+  
+	char antwort;
+	cout <<"Bitte antworten Sie mit Ja oder Nein: ";
+	cin>> antwort;
+	if(antwort == 'n' || antwort == 'N' ){
+		cout <<"Sie haben mit Nein geantwortet" << endl;
+	}
+	else if(antwort == 'j' || antwort == 'J'){
+		cout <<" Sie haben mit Ja geantwortet" << endl;
+	}
+	else{
+		cout <<" Sie haben falsche Eingabe gemacht"<< endl;
+	}
+	return 0;
+}
