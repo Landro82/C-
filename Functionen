@@ -1,0 +1,24 @@
+
+//Aufgabe 9
+void dauerInBetrieb(int betriebsZugehoerigkeit, char antwort){
+    
+    if(antwort == 'j' || antwort == 'J'){
+        cout <<"Sie bekommen keine Aktien"<< endl;
+    }
+    else if(antwort == 'n' || antwort == 'N'){
+        if(betriebsZugehoerigkeit > 2 && betriebsZugehoerigkeit <= 10){
+            cout << "Sie können 10 Aktien beziehen"<< endl;
+        }
+        else if(betriebsZugehoerigkeit > 10){
+            cout << "Sie können 20 Aktien beziehen"<< endl;
+        }
+        else{
+            cout << "Sie sind nicht lange genug in Betrieb"<< endl;
+        }
+    }
+    else{
+        cout << "Sie haben eine falsche Eingabe gegeben"<< endl;
+    }
+    
+	
+}
